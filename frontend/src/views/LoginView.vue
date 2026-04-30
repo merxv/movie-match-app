@@ -51,7 +51,7 @@ const handleLogin = async () => {
   try {
     error.value = '';
     await authStore.login(email.value, password.value);
-    router.push('/');
+    router.push('/movies');
   } catch (err) {
     error.value = err.response?.data?.error || 'Login failed';
   }

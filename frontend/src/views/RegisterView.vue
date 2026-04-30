@@ -61,7 +61,7 @@ const handleRegister = async () => {
   try {
     error.value = '';
     await authStore.register(username.value, email.value, password.value);
-    router.push('/');
+    router.push('/movies');
   } catch (err) {
     error.value = err.response?.data?.error || 'Register failed';
   }

@@ -17,12 +17,13 @@
       >
         Register
       </router-link>
-      <span
-        v-else
-        class="inline-block bg-indigo-500 text-white px-8 py-4 rounded-lg shadow-lg"
+      <router-link 
+        v-else 
+        to="/movies" 
+        class="bg-indigo-500 text-white px-8 py-4 rounded-lg hover:bg-indigo-600 shadow-lg transition transform hover:-translate-y-1"
       >
-        You are logged in
-      </span>
+        Browse Movies
+      </router-link>
     </div>
   </div>
 </template>
